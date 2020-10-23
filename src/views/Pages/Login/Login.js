@@ -47,7 +47,7 @@ class Login extends Component {
   componentDidMount() {
     const { resetUserData } = this.props;
     if (getAuthEmail() && getAuthUserType()) {
-      this.props.history.push('/order');
+      this.props.history.push('/account');
     } else {
       resetUserData();
     }
@@ -69,7 +69,7 @@ class Login extends Component {
           keep_signIn === true ? (stayingDuration = 'local') : (stayingDuration = 'session');
           const { id, email, name, user_type, token, image, defaultLatLng } = userData.data[0];
           authenticateUser(id, name, email, user_type, token, image, htmlspecialchars_decode(defaultLatLng), stayingDuration);
-          this.props.history.push('/order');
+          this.props.history.push('/account');
         } else {
           this.setState({
             notification: userData.errorMessage
@@ -122,7 +122,7 @@ class Login extends Component {
                         &nbsp; Remember me
                         </Col>
                         <Col xs="5" className="text-right">
-                          <Button color="link" className="px-0"><Link to="/message">Forgot password?</Link></Button>
+                          <Button color="link" className="px-0"><Link to="/message" style={{fontSize:'0.85em'}}>Forgot password?</Link></Button>
                         </Col>
                       </Row>
                       <Row className="login_register">
@@ -131,7 +131,7 @@ class Login extends Component {
                         </Col>
                         <Col xs="6" className="text-right">
                           <Link to="/register">
-                            <Button color="dark" className="px-3">Register Now!</Button>
+                            <Button color="dark" className="px-3">Register</Button>
                           </Link>
                         </Col>
                       </Row>

@@ -2,17 +2,17 @@ import React from 'react'
 
 export const htmlspecialchars_decode = (data) => {
   const map = {
-    '&quot;Segoe UI&quot;': 'Segoe UI',
-    '&quot;Open Sans&quot;': ' Open Sans',
-    '&quot;Fira Sans&quot;': 'Fira Sans',
-    '&quot;Helvetica Neue&quot;': 'Helvetica Neue',
+    '"Segoe UI"': 'Segoe UI',
+    '"Open Sans"': ' Open Sans',
+    '"Fira Sans"': 'Fira Sans',
+    '"Helvetica Neue"': 'Helvetica Neue',
     "&amp;": "&",
     "&lt;": "<",
     "&gt;": ">",
     "&quot;": '"',
     "&#039;": "'"
   };
-  return data.replace(/&amp;|&lt;|&gt;|&quot;|&#039;|&quot;Segoe UI&quot;|&quot;Open Sans&quot;|&quot;Fira Sans&quot;|&quot;Helvetica Neue&quot;/gi, function (matched) {
+  return data.replace(/&amp;|&lt;|&gt;|&quot;|&#039;|"Segoe UI"|"Open Sans"|"Fira Sans"|"Helvetica Neue"/gi, function (matched) {
     return map[matched];
   });
 }

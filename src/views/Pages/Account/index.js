@@ -164,7 +164,6 @@ class Account extends Component {
     const { errorMessage, error, userloading, userData } = this.props.userData;
     if (this.props !== prevProps) {
       if (userData.length !== 0) {
-        console.log(userData)
         if (userData.error === 'false' && userloading === 'done') {
           this.commonState(userData.data[0]);
           if (userData.submitted === 'true') {

@@ -75,13 +75,15 @@ class Edit extends Component {
   handleFileChange(e) {
     let file = e.target.files[0];
     let picReader = new FileReader();
-    picReader.onloadend = () => {
-      this.changeState({
-        file: file,
-        imagePreviewUrl: picReader.result
-      });
-    };
-    picReader.readAsDataURL(file);
+    if (file !== undefined) {
+      picReader.onloadend = () => {
+        this.changeState({
+          file: file,
+          imagePreviewUrl: picReader.result
+        });
+      };
+      picReader.readAsDataURL(file);
+    }
   }
 
   handleChange(e) {
@@ -117,7 +119,10 @@ class Edit extends Component {
     const id = this.props.match.params.id * 1;
     let { loading, error, errorMesage, communityData } = this.props.communityData;
     if (this.props !== prevProps) {
-      if (communityData.logoutUser !== undefined && communityData.logoutUser === 'true') {
+      console.log(communityData)
+      if (communityData.token !== undefined) {
+        setAuthToken(communityData.token);
+      } else if (communityData.logoutUser !== undefined && communityData.logoutUser === 'true') {
         signOut();
       }
       if (loading === 'done' && error === 'true') {
@@ -128,12 +133,10 @@ class Edit extends Component {
       } else {
         if (loading === 'done' && communityData.error === 'false' && !id) {
           if (communityData.submitted === 'true') {
-            setAuthToken(communityData.token);
             this.cleanSlate();
           }
         } else if (loading === 'done' && communityData.error === 'false' && id) {
           if (communityData.submitted === 'true') {
-            setAuthToken(communityData.token);
             this.props.history.push('/community');
           } else {
             this.updateState(this.props.communityData, id);

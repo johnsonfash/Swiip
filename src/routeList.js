@@ -1,5 +1,4 @@
 // import React from 'react';
-import { getAuthUserType } from './services/Auth'
 import Order from './views/Order';
 import CustomerMap from './views/Map/CustomerMap';
 import AgentMAp from './views/Map/AgentMAp'
@@ -17,9 +16,7 @@ import Edit from './views/Community/Editor';
 import View from './views/Community/View';
 import Page404 from './views/Pages/Page404';
 
-let routes;
-if ( getAuthUserType() === 'admin') {
-  routes = [
+export const adminRoutes = [
     { path: '/community/edit/:id', exact: true, name: 'Edit', component: Edit },
     { path: '/community/edit', exact: true, name: 'Edit', component: Edit },
     { path: '/account/edit', exact: true, name: 'Edit', component: Editor },
@@ -32,22 +29,21 @@ if ( getAuthUserType() === 'admin') {
     { path: '/', exact: false, name: 'Home', component: Page404 }
 
   ];
-} else if ( getAuthUserType() === 'agent' ) {
-  routes = [
+
+export const agentRoutes = [
     { path: '/pickups/new', exact: true, name: 'Address', component: New },
     { path: '/pickups/pending', exact: true, name: 'Address', component: Pending },
-    { path: '/community/:id', exact: true, name: 'View', component: View },
+    // { path: '/community/:id', exact: true, name: 'View', component: View },
     { path: '/account/address', exact: true, name: 'Map', component: CustomerMap },
     { path: '/pickups/map', exact: true, name: 'Order', component: AgentMAp },
     { path: '/account', exact: true, name: 'Account', component: Account },
     { path: '/support', exact: true, name: 'Support', component: Support },
-    { path: '/community', exact: true, name: 'Community', component: Community },
+    // { path: '/community', exact: true, name: 'Community', component: Community },
     { path: '/history', exact: true, name: 'History', component: History },
     { path: '/', exact: false, name: 'Home', component: Page404 }
 
   ];
-} else {
-  routes = [
+export const customerRoutes = [
     { path: '/order/summary', exact: true, name: 'Summary', component: Summary },
     { path: '/community/:id', exact: true, name: 'View', component: View },
     { path: '/account/address', exact: true, name: 'Map', component: CustomerMap },
@@ -59,8 +55,11 @@ if ( getAuthUserType() === 'admin') {
     { path: '/', exact: false, name: 'Home', component: Page404 }
 
   ];
-}
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 
-export default routes;
+export default {
+  agentRoutes,
+  adminRoutes,
+  customerRoutes
+};

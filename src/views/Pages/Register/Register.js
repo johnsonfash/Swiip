@@ -212,9 +212,9 @@ class Register extends Component {
       <div className="app flex-row align-items-center background_image">
         <Container>
           <Row className="justify-content-center">
-            <Col md="9" lg="7" xl="6">
+            <Col xs="12" sm="12" md="9" lg="7" xl="6">
               <br />
-              <Card className="mx-4">
+              <Card className="mx-6">
                 <CardBody className="p-4">
                   <h1>Register</h1>
                   <p className="text-muted">Create your account</p>

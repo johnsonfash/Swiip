@@ -9,7 +9,7 @@ import { removeAuthState, getAuthUserType } from '../../services/Auth';
 import { customer, agent, admin } from '../../_nav';
 // import navigation from '../../_nav';
 // routes config
-import routes from '../../routeList';
+import { adminRoutes, agentRoutes, customerRoutes } from '../../routeList';
 import DefaultFooter from './DefaultFooter';
 import DefaultHeader from './DefaultHeader';
 
@@ -35,12 +35,21 @@ class DefaultLayout extends Component {
     }[user_type];
   }
 
+  routePicker(user_type, cusRoutes, agtRoutes, admRoutes) {
+    return {
+      'customer': cusRoutes,
+      'agent': agtRoutes,
+      'admin': admRoutes
+    }[user_type];
+  }
+
   render() {
     const mystyle = {
       backgroundColor: "white",
     };
 
-    const nav = this.navPicker(getAuthUserType(),customer,agent,admin);
+    const routes = this.routePicker(getAuthUserType(), customerRoutes, agentRoutes, adminRoutes);
+    const nav = this.navPicker(getAuthUserType(), customer, agent, admin);
     return (
       <div className="app">
         <AppHeader fixed>

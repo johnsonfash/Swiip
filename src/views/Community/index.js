@@ -117,8 +117,8 @@ class Community extends Component {
           let eachPara = comm.details;
           let color;
           let percentage = Math.round((comm.fundGotten / comm.fundNeeded) * 100) + 1;
-          percentage > 60 ? ( color = 'success') : ( color = 'red');
-          eachPara = draftToHtml(JSON.parse(htmlspecialchars_decode(eachPara)));
+          percentage > 60 ? (color = 'success') : (color = 'red');
+          eachPara = draftToHtml(JSON.parse(htmlspecialchars_decode(htmlspecialchars_decode(eachPara))));
           eachPara = eachPara.substring(0, eachPara.indexOf('<', 50)) + '...';
           return (
             <Col xs="12" sm="6" md="4" key={comm.id} style={{ margin: '0 0 30px 0px', padding: '0.5em' }}>

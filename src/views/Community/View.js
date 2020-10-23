@@ -114,9 +114,10 @@ class View extends Component {
           });
         } else if (communityData.submitted === 'true') {
           setAuthToken(communityData.token);
-          if ( communityData.message === 'Donate success' ) {
+          if (communityData.message === 'Donate success') {
             this.changeState({
               total: '',
+              commData: [communityData.data.find(comm => comm.id === id)],
               notifDisplay: 'block',
               notification: communityData.message
             });
@@ -196,8 +197,8 @@ class View extends Component {
               let color;
               let published = dateConstructor(comm.published);
               let percentage = Math.round((comm.fundGotten / comm.fundNeeded) * 100) + 1;
-              percentage > 60 ? ( color = 'success') : ( color = 'red')
-              eachPara = draftToHtml(JSON.parse(htmlspecialchars_decode(eachPara)));
+              percentage > 60 ? (color = 'success') : (color = 'red')
+              eachPara = draftToHtml(JSON.parse(htmlspecialchars_decode(htmlspecialchars_decode(eachPara))));
               return (
                 <Row key={comm.id}>
                   <div className="community_container containerFull">
@@ -214,8 +215,8 @@ class View extends Component {
                           Date Pubished
                             </div>
                         <div className="date">
-                          {published.day+', '+published.month+' '+published.year}
-                            </div>
+                          {published.day + ', ' + published.month + ' ' + published.year}
+                        </div>
                       </div>
                       <div className="detail">
                         <div className="amount"> <span>Fund needed:</span> ₦{comm.fundNeeded}</div>

@@ -3,13 +3,8 @@ import { Button } from 'reactstrap'
 
 
 export class Support extends Component {
-    constructor(props) {
-        super(props)
-
-    }
 
     render() {
-      const {email} = this.state;
         return (
             <div style={{marginTop:'2em',textAlign:'center'}}>
               <div style={{marginBottom:'5em', width:'100%'}}>
