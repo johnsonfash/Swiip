@@ -74,7 +74,7 @@ class History extends Component {
     } else {
       historyList = <div className="timeline">
         {orderData.data && orderData.data.sort((a, b) => {
-          return a.iorderDate - b.orderDate;
+          return b.orderDate - a.orderDate;
         }).map(order => {
           let date = dateConstructor(order.orderDate * 1);
           let status = order.status;
