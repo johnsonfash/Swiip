@@ -8,31 +8,27 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 <img src="https://swiip.000webhostapp.com/Swiip_shorter.gif" width="70%"/>
 
-## About
+## Inspiration
+Being from Nigeria is inspiration enough to do something about the rising increase of the already plagued polluted land and water. There is just no responsibility by either the Government or its people to protect the environment against pollution and the inevitable adverse global warming. I feel its time to make a change and we can only do this if we come together to make a difference. I believe there are people out there like me who wants to make a change, and are financially ok to make these changes, but can't possibly do it alone or has no platform to do these things. And here is where SWIIP can come in. A quick easy interface that allows for crowd funding to clean our society as well as payment for ones personal waste pickup by authorized agents who can maintain these waste will go a long way into improving our society.
 
-What is this project about. Ok to enrich here or the section above it with an image. 
 
-Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
+## What it does
+This app simple allows an admin to post list of certain effected society and members who join in or willing to join in can simply raise funds till its enough to clean the affected society. They see a change in funds percentage immediately they make payment, hence they know they are, along with other people are walking towards a goal. They can also order for their personal waste pickup as well.
 
-This is a simple JavaScript starter repo template for setting up your project. The setup contains
-
-- Jest: For runnung tests. We strongly recommend that JavaScript projects use Jest
-
-- Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
-
-## Why
-
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
 
 ## Usage
- How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
+For testing purposes, use the following credentials on https://swiip.000webhostapp.com
+Admin Login: contact me
+Agent Login: agent@gmail.com (email) / 12345678 (password)
+Customer Login: customer@gmail.com (email) / 12345678 (password)
 
+If you are going to clone this repo to your local machine, make sure you apply for your own google map api key.
+The interface is simply straight forward and there will be no issues on navigation.
 
 ## Setup
 
-Install `npm` or `yarn` if you dont have any of them already installed. We recommend Yarn though.
-
-After clonning the repo to your local machine and moving into the cloned folder, Run `yarn install` to get started by installing dependencies. 
+Install `npm` or `yarn` if you dont have any of them already installed.
+After clonning the repo to your local machine and moving into the cloned folder, Run `yarn install` or `npm install` to get started by installing dependencies. 
 
 `src/index.js` is the entry to the project and source code should go into the `src` folder.
 
@@ -51,22 +47,14 @@ This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bun
 
 ## Authors
 
-List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
+Fashanu Tosin : Front and Back end dev. github.com/johnerry.
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
-First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
-1.  area one (e.g this app is about human trafficking and you need feedback on your roadmap and feature list from the private sector / NGOs)
+First, you can send a mail to me at fashanutosin7@gmail.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas i think i need the most help in this project :
+1.  area one (e.g this app is about waste management and you need feedback on your roadmap and feature list from the waste management sector)
 2.  area two (e.g you want people to opt-in and try using your staging app at staging.project-name.com and report any bugs via a form)
-3.  area three (e.g here is the zoom link to our end-of sprint webinar, join and provide feedback as a stakeholder if you can)
 
-## Acknowledgements
-
-Did you use someone else’s code?
-Do you want to thank someone explicitly?
-Did someone’s blog post spark off a wonderful idea or give you a solution to nagging problem?
-
-It's powerful to always give credit.
 
 ## LICENSE
 MIT
