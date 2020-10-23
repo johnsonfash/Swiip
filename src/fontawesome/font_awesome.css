@@ -1,0 +1,115 @@
+/*!
+*  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/
+/* Add all your fontawesome content here without needing to install fontawesome using woff2 as the only encoder */
+/* Note all fontawesome will work, only the basics will */
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('./fontawesome-webfont.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-user:before {
+	content: "\f007";
+}
+
+.fa-user-o:before {
+	content: "\f2c0";
+}
+
+.fa-user-circle:before {
+	content: "\f2bd";
+}
+
+.fa-lock:before {
+	content: "\f023";
+}
+
+.fa-envelope:before {
+	content: "\f0e0";
+}
+
+.fa-search:before {
+	content: "\f002";
+}
+
+.fa-tasks:before {
+	content: "\f0ae";
+}
+
+.fa-wrench:before {
+	content: "\f0ad";
+}
+
+.fa-money:before {
+	content: "\f0d6";
+}
+
+.fa-sign-out:before {
+	content: "\f08b";
+}
+
+.fa-cart-plus:before {
+	content: "\f217";
+}
+
+.fa-globe:before {
+	content: "\f0ac";
+}
+
+.fa-history:before {
+	content: "\f1da";
+}
+
+.fa-question-circle:before {
+	content: "\f059";
+}
+
+.fa-info-circle:before {
+	content: "\f05a";
+}
+
+.fa-truck:before {
+	content: "\f0d1";
+}
+
+.fa-plus-circle:before {
+	content: "\f055";
+}
+
+.fa-pause-circle-o:before {
+	content: "\f28c";
+}
+
+.fa-history:before {
+	content: "\f1da";
+}
+
+.fa-question-circle:before {
+	content: "\f059";
+}
+
+.fa-group:before,
+.fa-users:before {
+	content: "\f0c0";
+}
+
+.fa-eye:before {
+	content: "\f06e";
+}
+
+.fa-male:before {
+	content: "\f183";
+}
