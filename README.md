@@ -6,7 +6,7 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 
 
-<img src="https://swiip.000webhostapp.com/Swiip_shorter.gif" width="100%"/>
+<img src="https://swiip.000webhostapp.com/Swiip_shorter.gif" width="70%"/>
 
 ## About
 
