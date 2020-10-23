@@ -6,7 +6,7 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 
 
-<img src="https://swiip.000webhostapp.com/Swiip_shorter.gif" width="70%"/>
+<img src="https://swiip.000webhostapp.com/Swiip_shorter.gif" width="50%"/>
 
 ## Inspiration
 Being from Nigeria is inspiration enough to do something about the rising increase of the already plagued polluted land and water. There is just no responsibility by either the Government or its people to protect the environment against pollution and the inevitable adverse global warming. I feel its time to make a change and we can only do this if we come together to make a difference. I believe there are people out there like me who wants to make a change, and are financially ok to make these changes, but can't possibly do it alone or has no platform to do these things. And here is where SWIIP can come in. A quick easy interface that allows for crowd funding to clean our society as well as payment for ones personal waste pickup by authorized agents who can maintain these waste will go a long way into improving our society.
