@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Badge, UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem } from 'reactstrap';
 import PropTypes from 'prop-types';
-// import profileImage from '../../assets/img/avatar/profile_image.png';
 import { AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import { getAuthImage } from '../../services/Auth';
-// import logo from '../../assets/img/brand/logo.svg'
 import sweeperLogo from '../../assets/img/brand/sweeper_logo.png';
 import sweeperLogoSmall from '../../assets/img/brand/sweeper_small_logo.png';
-// import sygnet from '../../assets/img/brand/sygnet.svg'
 
 const propTypes = {
   children: PropTypes.node,
