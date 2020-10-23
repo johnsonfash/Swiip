@@ -47,7 +47,7 @@ This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bun
 
 ## Authors
 
-Fashanu Tosin : Front and Back end dev. github.com/johnerry.
+Fashanu Tosin : both front and back-end dev. github.com/johnerry.
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!
