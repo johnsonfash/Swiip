@@ -321,7 +321,7 @@ class CustomerMap extends React.PureComponent {
             <FormGroup>
               <Input className="account_address" id="customer_address" value={addressBox} onChange={this.handleChange} type="textarea" placeholder="Adress  ( use google map, then type in additional information here )" required />
             </FormGroup>
-            <button type="submit" className="btn_save">{buttonText}</button>
+            <button type="submit" className="btn_save btn">{buttonText}</button>
           </Form>
         </div>
         <div className="notif" style={{ display: notifDisplay }}>{notification}<span role="img" aria-label="sheep" onClick={this.close}>&#x274E;</span> </div>
