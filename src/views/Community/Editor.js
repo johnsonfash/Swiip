@@ -48,7 +48,7 @@ class Edit extends Component {
 
   updateState(communityData, id) {
     let data = communityData.communityData.data.find(comm => comm.id === id);
-    let editorStuff = convertFromRaw(JSON.parse(htmlspecialchars_decode(data.details)));
+    let editorStuff = convertFromRaw(JSON.parse(htmlspecialchars_decode(htmlspecialchars_decode(data.details))));
     this.changeState({
       file: [],
       imagePreviewUrl: data.image,
