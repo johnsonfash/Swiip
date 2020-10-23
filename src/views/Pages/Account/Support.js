@@ -1,27 +1,12 @@
 import React, { Component } from 'react'
-import { Row, Input, Button, Col } from 'reactstrap'
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import { Link, withRouter } from 'react-router-dom';
-import { getAuthUserType, getAuthUserAll } from '../../../services/Auth';
-import { sendFetchAccountData } from '../../../store/actions/user';
+import { Button } from 'reactstrap'
+
 
 export class Support extends Component {
     constructor(props) {
         super(props)
-    
-        this.state = {
-             email: '',
-        }
-        this.handChange = this.handChange.bind(this);
-    }
 
-    handChange(e) {
-      this.setState({
-        [e.target.id]: e.target.value
-      })
     }
-    
 
     render() {
       const {email} = this.state;
@@ -46,19 +31,4 @@ export class Support extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-      userData: state.userData
-    };
-  };
-  
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      sendFetchData: (data) => dispatch(sendFetchAccountData(data))
-    };
-  };
-  
-  export default compose(
-    withRouter,
-    connect(mapStateToProps, mapDispatchToProps)
-  )(Support);
+  export default Support;
