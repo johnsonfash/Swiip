@@ -271,7 +271,7 @@ class CustomerMap extends React.PureComponent {
     }
     let googleScript = document.createElement('script');
     // due to theft and billing, use your google map api key or contact @johnerry on git or fashanutosin7@gmail.com for 1 day test key
-    googleScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6FxY2g&libraries=places';
+    googleScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g&libraries=places';
     googleScript.async = true;
     googleScript.setAttribute('id', 'googleMapScript');
     window.document.body.appendChild(googleScript);

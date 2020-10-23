@@ -65,7 +65,7 @@ class AgentMap extends React.PureComponent {
       }
       let googleScript = document.createElement('script');
       // API key invalid, add yours or contact @johnerry on git or fashanutosin7@gmail.com
-      googleScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g';
+      googleScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6FxY2g';
       googleScript.async = true;
       googleScript.setAttribute('id', 'googleMapAgentScript');
       window.document.body.appendChild(googleScript);
