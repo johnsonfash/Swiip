@@ -17,10 +17,10 @@ This app simple allows an admin to post list of certain effected society and mem
 
 
 ## Usage
-For testing purposes, use the following credentials on https://swiip.000webhostapp.com
-Admin Login: contact me
-Agent Login: agent@gmail.com (email) / 12345678 (password)
-Customer Login: customer@gmail.com (email) / 12345678 (password)
+For testing purposes, use the following credentials on https://swiip.000webhostapp.com <br/>
+Admin Login: contact me <br/>
+Agent Login: agent@gmail.com (email) / 12345678 (password) <br/>
+Customer Login: customer@gmail.com (email) / 12345678 (password) <br/>
 
 If you are going to clone this repo to your local machine, make sure you apply for your own google map api key.
 The interface is simply straight forward and there will be no issues on navigation.
